@@ -7,8 +7,8 @@ status="$(echo $line | cut -d ' ' -f 2)"
 #echo "$status"
 
 if [ "$status" == "Done" ]; then
-if [ ! -f /var/log/openvas/reports/"$id".xml ]; then
-omp -u USER -w PASSWORD -R "$id" > /var/log/openvas/reports/"$id".xml
+if [ ! -f /var/log/openvas/reports/"$id".csv ]; then
+omp -u USER -w PASSWORD -f c1645568-627a-11e3-a660-406186ea4fc5 -R "$id" > /var/log/openvas/reports/"$id".csv
 
 else
 
